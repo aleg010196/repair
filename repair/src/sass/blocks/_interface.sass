@@ -1,0 +1,52 @@
+*
+    box-sizing: border-box
+body
+    +reg
+img
+    max-width: 100%
+    
+.container
+    width: 1170px
+    margin: auto
+@media(max-width: 1200px)
+    .container
+        width: 960px
+@media(max-width: 768px)
+    .container
+       max-width: 750px
+       width: 90%
+    .section
+        padding-top: 60px
+        padding-bottom: 60px
+
+.button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 18px 30px
+    &:hover
+        background-color: lighten($main-color,10%)
+        cursor: pointer
+.section
+    padding: 90px 0
+    &-title
+        font-size: 24px
+        +bold
+        text-align: center
+        max-width: 500px
+    &-subtitle
+         display: block
+         font-size: 16px
+.input
+    border: 1px solid $border-input
+    padding: 20px 26px
+    font-size: 15px
+    border-radius: 10px
+.arrows
+    &__left
+        &:hover
+            cursor: pointer
+    &__right
+        &:hover
+            cursor: pointer   
+
